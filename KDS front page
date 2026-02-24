@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Sparkly Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* cute font */
+            text-align: center;
+            background-color: #ffc0cb; /* base pink */
+            overflow-x: hidden;
+        }
+
+        /* Glitter overlay */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: url('https://i.ibb.co/0V8XxVh/glitter.png'); /* small glitter PNG */
+            background-size: 50px 50px;
+            animation: sparkle 3s linear infinite;
+            opacity: 0.5;
+            z-index: 1000;
+        }
+
+        @keyframes sparkle {
+            0% {background-position: 0 0;}
+            100% {background-position: 500px 500px;}
+        }
+
+        .container {
+            padding: 40px 20px;
+            position: relative;
+            z-index: 1010; /* above glitter */
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
+        .text {
+            font-size: 22px;
+            color: white;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TOP IMAGE -->
+        <img src="https://cdn.discordapp.com/attachments/1109957265806594178/1475945489634693341/IMG_9161.jpg?ex=699f54da&is=699e035a&hm=d797f0d395ab8cfd2670a69c5d67ed3b61dbe170d062b9cd0e27ef32abb26d9e&" alt="Top Image">
+
+        <!-- TEXT -->
+        <div class="text">
+            Welcome to the Kanye distribution system! This is our front page where you can find all about info! 
+The Kanye distribution system is a system with a goal to distribute as many people as possible into the ownership of Kanye West. If you are already under the ownership of KW, you may read ahead. If you are not under the ownership of KW, click on the following link and accept Kanye West as your owner: https://sofijajokic29-sys.github.io/kanyedistributionsystem/ .
+The Kanye distribution system also works to protect Family gc from Caki's celebrity crushes, real-life crushes, new obsession and etcetera by kicking her from the groupchat. 
+People who are under the ownership of Kanye West have many privileges, such as being able to brag about being under Kanye West's ownership! 
+Here, we work to create an environment that brings together all people in possession of KW! Join us today with no subscription fee, completely free of charge!  We are looking forward to seeing you here again!
+        </div>
+
+        <!-- BOTTOM IMAGE -->
+        <img src="https://cdn.discordapp.com/attachments/1109957265806594178/1475984527984689264/IMG_9172.jpg?ex=699f7935&is=699e27b5&hm=aa5aa1bba0aff6a5604346384c0c18fd5b0341aa935da92310425882fb960423&" alt="Bottom Image">
+
+    </div>
+
+</body>
+</html>
